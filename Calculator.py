@@ -1,18 +1,18 @@
 #Adds two numbers
-def add(a, b):
-    return a + b
+def add(num1, num2):
+    return num1 + num2
 
 #Substracts two numbers
-def substract(a, b):
-    return a - b
+def substract(num1, num2):
+    return num1 - num2
 
 #Multiplies two numbers
-def multiply(a, b):
-    return a * b
+def multiply(num1, num2):
+    return num1 * num2
 
 #Divides two numbers
-def divide(a, b):
-    return a / b
+def divide(num1, num2):
+    return num1 / num2
 
 print('What do you want to do?')
 print('1. Add')
@@ -26,13 +26,13 @@ num2 = int(input('Enter the second number: '))
 
 def calculating():
     if choice == 1:
-        print(num1, ' + ', num2, ' = ', num1+num2)
+        print(num1, ' + ', num2, ' = ', add(num1, num2))
     elif choice == 2:
-        print(num1, ' - ', num2, ' = ', num1-num2)
+        print(num1, ' - ', num2, ' = ', substract(num1, num2))
     elif choice == 3:
-        print(num1, ' * ', num2, ' = ', num1*num2)
+        print(num1, ' * ', num2, ' = ', multiply(num1, num2))
     elif choice == 4:
-        print(num1, ' / ', num2, ' = ', num1/num2)
+        print(num1, ' / ', num2, ' = ', divide(num1, num2))
     else:
         print('You didn\'t choose one of 4!')
 
